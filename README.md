@@ -4,13 +4,34 @@
 ## Requirements
 - Python 3.8+
 
-## Quick install (local)
+## Install
 
+You can use VSCode’s built in cloning GUI, or:
 ```bash
-python -m venv venv
-source venv/bin/activate
-python -m pip install -r requirements.txt
+git clone [repository-url] neon_racer_course
 ```
+Once you have the repository folder open, navigate to the `neon_racer` folder:
+```bash
+fin@Fins-MacBook-Air neon_racer_course % cd neon_racer
+fin@Fins-MacBook-Air neon_racer %
+```
+Create virtual environment:
+```bash
+fin@Fins-MacBook-Air neon_racer % python3 -m venv venv
+fin@Fins-MacBook-Air neon_racer % source venv/bin/activate
+# Windows: venv\Scripts\activate
+(venv) fin@Fins-MacBook-Air neon_racer %
+```
+
+You will see `(venv)` next to your terminal which tells you that it is activated and working properly.
+Now you are ready to install dependencies:
+```bash
+(venv) fin@Fins-MacBook-Air neon_racer % pip install -r requirements.txt
+```
+This should start to download a long list of files which the program(s) in this course will use. It is important that we are using the (venv) because otherwise Python will try to install these dependencies globally for our user, which can create issues and make a mess. It is best to contain these files to our workspace.
+
+**It is very important that all students get their virtual environment working before starting the course.**
+
 ## Controls
 
 | Key       | Action                                                                 |
