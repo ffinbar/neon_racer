@@ -3,32 +3,39 @@
 
 ## Requirements
 - Python 3.8+
+- Visual Studio Code
+- A Can-Do Attitude
 
 ## Install
 
-You can use VSCode’s built in cloning GUI, or:
+You can use VSCode’s built in cloning GUI, or in the VSCode terminal:
 ```bash
-git clone [repository-url] neon_racer_course
+git clone https://github.com/ffinbar/neon_racer.git neon_racer_course
 ```
-Once you have the repository folder open, navigate to the `neon_racer` folder:
+Once you have the repository folder open, navigate to the `neon_racer` folder.
+(For example, at this point your terminal should resemble `fin@Fins-MacBook-Air neon_racer_course %`):
 ```bash
-fin@Fins-MacBook-Air neon_racer_course % cd neon_racer
-fin@Fins-MacBook-Air neon_racer %
+cd neon_racer
 ```
+At this point your terminal should resemble `fin@Fins-MacBook-Air neon_racer %`
+
 Create virtual environment:
 ```bash
-fin@Fins-MacBook-Air neon_racer % python3 -m venv venv
-fin@Fins-MacBook-Air neon_racer % source venv/bin/activate
+python3 -m venv venv
+source venv/bin/activate
 # Windows: venv\Scripts\activate
-(venv) fin@Fins-MacBook-Air neon_racer %
 ```
+At this point your terminal should resemble `(venv) fin@Fins-MacBook-Air neon_racer %`
 
-You will see `(venv)` next to your terminal which tells you that it is activated and working properly.
+You will see `(venv)` next to your terminal which tells you that the virtual environment is activated and working properly.
+
+At the start of every new session, you will (usually) need to re-activate the virtual environment by navigating to `neon_racer` and running the same `source venv/bin/activate` command.
+
 Now you are ready to install dependencies:
 ```bash
-(venv) fin@Fins-MacBook-Air neon_racer % pip install -r requirements.txt
+pip install -r requirements.txt
 ```
-This should start to download a long list of files which the program(s) in this course will use. It is important that we are using the (venv) because otherwise Python will try to install these dependencies globally for our user, which can create issues and make a mess. It is best to contain these files to our workspace.
+This should start to download a long list of files which the program(s) in this course will use. It is important that we are using the `(venv)` when doing this because otherwise Python will try to install these dependencies globally for our user, which can create issues and make a mess. It is best to contain these files to our workspace.
 
 **It is very important that all students get their virtual environment working before starting the course.**
 
